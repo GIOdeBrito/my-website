@@ -1,0 +1,121 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --color-default-background: #e1dfd0;
+    --color-ivory-background: #e1dfd0;
+    --color-gray-foreground: #24262b;
+    --color-html-foreground: #f06529;
+    --color-green-foreground: #659377;
+    --color-dark-foreground: #2f2f2f;
+    --color-red-foreground: #ff4b4b;
+    --color-bluegreen-foreground: #21b6a8;
+}
+
+html, body {
+    margin: 0;
+    height: 100vh;
+    /*background-color: var(--color-default-background);*/
+
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-bluegreen-foreground) var(--color-dark-foreground);
+
+    background-image: url(./assets/image/dark-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+}
+
+nav {
+    padding: 1.5rem;
+    background-color: var(--color-dark-foreground);
+    display: flex;
+    gap: .3rem;
+}
+nav > * {
+    margin: auto 0;
+}
+nav p {
+    color: #fff;
+}
+
+main {
+    font-size: 1.2em;
+    height: 100%;
+}
+
+h1, h2, p, a {
+    color: var(--color-dark-foreground)
+}
+
+footer {
+    padding: 1rem;
+    background-color: var(--color-dark-foreground);
+    text-align: center;
+}
+footer > p {
+    color: #ffffff40;
+    font-size: .78rem;
+}
+
+.my-name-style {
+    letter-spacing: 3px;
+}
+.my-name-style::after {
+    content: '}';
+    color: var(--color-bluegreen-foreground);
+}
+.my-name-style::before {
+    content: '{';
+    color: var(--color-bluegreen-foreground);
+}
+
+.nav-options {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    gap: .825rem;
+}
+.nav-options > section {
+    display: flex;
+    gap: .2rem;
+}
+.nav-options a {
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: transparent;
+    transition: border-color .3s linear;
+}
+.nav-options a:hover {
+    border-color: var(--color-bluegreen-foreground);
+}
+.nav-options img {
+    filter: invert(1);
+}
+
+.base-profile > header {
+    text-align: center;
+}
+.base-profile > header > h1 {
+    color: #fff;
+    font-size: 2.6rem;
+}
+.base-profile > h2 {
+    color: #fff;
+    text-align: center;
+}
+
+
+
