@@ -2,6 +2,7 @@
 window.addEventListener('DOMContentLoaded', function ()
 {
     //writeLetters();
+    siteIconsAnimation();
 });
 
 function writeLetters ()
@@ -10,6 +11,7 @@ function writeLetters ()
     let value = parag.innerText;
 
     parag.innerText = String();
+
     let i = 0;
 
     let interval = setInterval(() =>
@@ -24,4 +26,48 @@ function writeLetters ()
         i++;
     }, 200);
 }
+
+function siteIconsAnimation ()
+{
+    let area = document.querySelector("section[class='base-paragragh-area-2'");
+    let icons = Array.from(area.getElementsByTagName('img'));
+
+    let iconSets = new Map([
+        ['linkedin', 'https://www.linkedin.com/in/giordano-de-brito-384808299/'],
+    ]);
+
+    let currentIcon = 0;
+
+    icons.forEach((child, i) => 
+    {
+        let name = child?.['alt'] ?? String();
+
+        child.link = iconSets.get(name);
+    });
+
+    const func_ExpandIcon = () =>
+    {
+        setTimeout(() =>
+        {
+            if(currentIcon >= icons.length)
+            {
+                currentIcon = 0;
+            }
+            
+            icons[currentIcon].style.transform = 'scale(1.16)';
+
+            setTimeout(() =>
+            {
+                icons[currentIcon].style.transform = '';
+                currentIcon++;
+
+                func_ExpandIcon();
+            }, 1000);
+        }, 1000);
+    };
+
+    func_ExpandIcon();
+}
+
+
 

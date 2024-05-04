@@ -32,7 +32,7 @@ html, body {
 }
 
 nav {
-    position: fixed;
+    position: sticky;
     width: 100vw;
     box-sizing: border-box;
     top: 0;
@@ -57,7 +57,7 @@ main {
 }
 
 h1, h2, p, a {
-    color: var(--color-dark-foreground)
+    color: #fff;
 }
 
 footer {
@@ -111,8 +111,8 @@ footer > p {
 
 .base-profile {
     display: flex;
-    height: 100vh;
-    margin: 1rem;
+    margin: 2rem;
+    padding: 1rem;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -124,6 +124,22 @@ footer > p {
 
 .base-paragragh-area-1 {
     margin: 2rem 0;
+}
+.base-paragragh-area-2 {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+/* Site icons */
+.base-paragragh-area-2 > section > img {
+    width: 40px;
+    border-radius: 0;
+    filter: invert(1);
+    transition: transform .25s linear;
+}
+.base-paragragh-area-2 > section > img:hover {
+    transform: scale(1.16);
+    cursor: pointer;
 }
 
 .base-profile header > h1 {
@@ -148,12 +164,8 @@ footer > p {
 .base-profile mark[name="upper-text"] {
     color: var(--color-gray-foreground);
 }
-.base-profile mark[name="middle-text"] {
+.base-profile mark[name="name-text"] {
     font-size: 3rem;
-    text-transform: uppercase;
-}
-.base-profile mark[name="ultimo-text"] {
-    text-align: left;
     text-transform: uppercase;
 }
 
@@ -166,11 +178,12 @@ footer > p {
 }
 
 .base-section {
-    background-color: #fff;
+    background-color: #0000;
     padding: 1rem;
 }
 .base-section h1 {
     font-weight: bold;
     font-size: 2rem;
+    color: #fff;
 }
 

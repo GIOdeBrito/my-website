@@ -1,0 +1,39 @@
+
+
+@media screen and (max-width: 1024px)
+{
+    nav {
+        position: sticky;
+    }
+
+    .base-profile {
+        display: block;
+        height: 60vh;
+    }
+    
+    .base-profile h1 > mark {
+        text-align: center;
+    }
+    
+    .base-profile mark[name="upper-text"] {
+        font-size: 1.2rem;
+        color: var(--color-gray-foreground);
+    }
+    .base-profile mark[name="middle-text"] {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    .base-profile mark[name="ultimo-text"] {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    
+    .base-profile img {
+        border-radius: 12rem;
+        width: 16rem;
+    }
+}
+
+
+
