@@ -10,6 +10,7 @@
     --color-green-foreground: #659377;
     --color-dark-foreground: #2f2f2f;
     --color-dark-background: #1e1e1e;
+    --color-gray-foreground: #797979;
     --color-red-foreground: #ff4b4b;
     --color-bluegreen-foreground: #21b6a8;
 }
@@ -132,15 +133,20 @@ footer > p {
     text-align: left;
 }
 .base-profile section > p {
-    color: var(--color-bluegreen-foreground);
+    color: var(--color-gray-foreground);
     font-size: 1rem;
     text-wrap: wrap;
+    letter-spacing: 2px;
     margin: 0;
 }
 .base-profile mark {
     display: block;
     background-color: #0000;
     color: #fff;
+}
+
+.base-profile mark[name="upper-text"] {
+    color: var(--color-gray-foreground);
 }
 .base-profile mark[name="middle-text"] {
     font-size: 3rem;
@@ -150,6 +156,7 @@ footer > p {
     text-align: left;
     text-transform: uppercase;
 }
+
 .base-profile > section {
     text-align: center;
 }
