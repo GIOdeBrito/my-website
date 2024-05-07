@@ -33,7 +33,7 @@ html, body {
 
 nav {
     position: sticky;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     top: 0;
     z-index: 6;
@@ -112,7 +112,7 @@ footer > p {
 .base-profile {
     display: flex;
     margin: 2rem;
-    padding: 1rem;
+    padding: 5rem 1rem;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -172,18 +172,25 @@ footer > p {
 .base-profile > section {
     text-align: center;
 }
-.base-profile img {
+
+.profile-picture > img {
     border-radius: 12rem;
-    width: 20rem;
+    width: 16rem;
 }
 
 .base-section {
+    display: flex;
     background-color: #0000;
-    padding: 1rem;
+    padding: 1.5rem;
+    gap: 8rem;
 }
 .base-section h1 {
     font-weight: bold;
     font-size: 2rem;
     color: #fff;
+    white-space: nowrap;
+    border-style: solid;
+    border-width: 0 0 3px 0;
+    border-color: #21b6a8;
 }
 

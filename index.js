@@ -23,6 +23,7 @@ function writeLetters ()
         }
 
         parag.innerText += value[i];
+        
         i++;
     }, 200);
 }
@@ -36,14 +37,14 @@ function siteIconsAnimation ()
         ['linkedin', 'https://www.linkedin.com/in/giordano-de-brito-384808299/'],
     ]);
 
-    let currentIcon = 0;
-
-    icons.forEach((child, i) => 
+    icons.forEach(child => 
     {
         let name = child?.['alt'] ?? String();
 
         child.link = iconSets.get(name);
     });
+
+    let currentIcon = 0;
 
     const func_ExpandIcon = () =>
     {
