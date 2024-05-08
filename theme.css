@@ -60,6 +60,16 @@ h1, h2, p, a {
     color: #fff;
 }
 
+img {
+    user-select: none;
+}
+
+mark[name='outline'] {
+    background-color: var(--color-bluegreen-foreground);
+    font-weight: bold;
+    padding: 0 2px;
+}
+
 footer {
     padding: 1rem;
     background-color: var(--color-dark-foreground);
@@ -92,6 +102,7 @@ footer > p {
     display: flex;
     gap: .2rem;
 }
+
 .nav-options a {
     color: #fff;
     text-transform: none;
@@ -105,6 +116,7 @@ footer > p {
 .nav-options a:hover {
     border-color: var(--color-bluegreen-foreground);
 }
+
 .nav-options img {
     filter: invert(1);
 }
@@ -118,6 +130,7 @@ footer > p {
     justify-content: center;
     gap: 4rem;
 }
+
 .base-profile header {
     text-align: center;
 }
@@ -125,12 +138,14 @@ footer > p {
 .base-paragragh-area-1 {
     margin: 2rem 0;
 }
+
 .base-paragragh-area-2 {
     display: flex;
     justify-content: center;
     gap: 1.2rem;
 }
-/* Site icons */
+
+/* Website platforms icons */
 .base-paragragh-area-2 > section > img {
     width: 40px;
     border-radius: 0;
@@ -148,6 +163,7 @@ footer > p {
     margin: 0;
     text-align: left;
 }
+
 .base-profile section > p {
     color: var(--color-gray-foreground);
     font-size: 1rem;
@@ -155,12 +171,12 @@ footer > p {
     letter-spacing: 2px;
     margin: 0;
 }
+
 .base-profile mark {
     display: block;
     background-color: #0000;
     color: #fff;
 }
-
 .base-profile mark[name="upper-text"] {
     color: var(--color-gray-foreground);
 }
@@ -181,9 +197,10 @@ footer > p {
 .base-section {
     display: flex;
     background-color: #0000;
-    padding: 1.5rem;
+    padding: 4rem;
     gap: 8rem;
 }
+
 .base-section h1 {
     font-weight: bold;
     font-size: 2rem;
@@ -192,5 +209,17 @@ footer > p {
     border-style: solid;
     border-width: 0 0 3px 0;
     border-color: #21b6a8;
+}
+
+.base-section p {
+    margin: 22px 0;
+}
+
+.bright-section {
+    background-color: #eee;
+}
+
+.bright-section h1 {
+    color: #000;
 }
 
