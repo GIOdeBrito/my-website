@@ -69,10 +69,22 @@ mark[name='outline'] {
     font-weight: bold;
     padding: 0 2px;
 }
+ 
+mark[name="upper-text"] {
+    color: var(--color-gray-foreground);
+    background-color: #0000;
+}
+
+mark[name="name-text"] {
+    font-size: 3rem;
+    text-transform: uppercase;
+    background-color: #0000;
+    color: #fff;
+}
 
 footer {
     padding: 1rem;
-    background-color: var(--color-dark-foreground);
+    background-color: var(--color-dark-background);
     text-align: center;
 }
 footer > p {
@@ -172,19 +184,6 @@ footer > p {
     margin: 0;
 }
 
-.base-profile mark {
-    display: block;
-    background-color: #0000;
-    color: #fff;
-}
-.base-profile mark[name="upper-text"] {
-    color: var(--color-gray-foreground);
-}
-.base-profile mark[name="name-text"] {
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-
 .base-profile > section {
     text-align: center;
 }
@@ -215,11 +214,46 @@ footer > p {
     margin: 22px 0;
 }
 
+/* Bright technologies section */
+.bright-section-main {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.bright-section-main h1, .bright-section-main p {
+    color: #000;
+}
+
+.bright-section-main p {
+    text-align: end;
+}
+
 .bright-section {
     background-color: #eee;
+    display: block;
+}
+
+.bright-section > :nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.bright-section > :nth-child(2) > * {
+    
 }
 
 .bright-section h1 {
+    text-align: center;
+    border-color: #000;
     color: #000;
+    border-style: none;
+}
+
+.bright-section img {
+    /*width: 5rem;*/
+    height: 4rem;
 }
 
