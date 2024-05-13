@@ -70,7 +70,7 @@ mark[name='outline'] {
     font-weight: bold;
     padding: 0 2px;
 }
- 
+
 mark[name="upper-text"] {
     color: var(--color-gray-foreground);
     background-color: #0000;
@@ -301,6 +301,7 @@ footer > p {
 }
 .projects-section > section > :nth-child(1) > :not(:first-child):not(span) {
     position: absolute;
+	top: 0;
     left: 0;
     opacity: 0;
 }
