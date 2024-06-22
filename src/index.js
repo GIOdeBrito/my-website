@@ -1,9 +1,14 @@
 
+
+import { ModalText } from './modal.js';
+
 window.addEventListener('DOMContentLoaded', function ()
 {
     //writeLetters();
     siteIconsAnimation();
     animateProjectImages();
+
+	new ModalText('receba', '50%', '50%');
 });
 
 function writeLetters ()
@@ -66,8 +71,6 @@ function siteIconsAnimation ()
 function animateProjectImages ()
 {
     let section = document.querySelector('article[class="projects-section"]');
-
-	console.log();
 
     Array.from(section.children[0].children).forEach(child =>
     {
