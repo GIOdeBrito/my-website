@@ -4,13 +4,12 @@ import { ModalText } from './modal.js';
 
 window.addEventListener('DOMContentLoaded', function ()
 {
-    //writeLetters();
     siteIconsAnimation();
     animateProjectImages();
-
-	new ModalText('receba', '50%', '50%');
+	//setMarksInformation();
 });
 
+/*
 function writeLetters ()
 {
     let parag = document.querySelector('p[class="my-name-style"]');
@@ -33,6 +32,7 @@ function writeLetters ()
         i++;
     }, 200);
 }
+*/
 
 function siteIconsAnimation ()
 {
@@ -99,5 +99,21 @@ function animateProjectImages ()
     });
 }
 
+/*
+function setMarksInformation ()
+{
+	const idMap = new Map(
+	[
+		[
+			'mark-self-learned',
+			`When I was very little`,
+		]
+	]);
 
+	for(let [key, value] of idMap)
+	{
+		window[key].onclick = () => new ModalText(value, '40%', '50%');
+	}
+}
+*/
 

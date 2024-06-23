@@ -19,11 +19,15 @@
 	background-color: var(--color-dark-foreground);
 	box-shadow: 0 0 1rem #00000078;
 	transform: translateX(50%) translateY(-50%);
+	transition: opacity .25s linear, top .25s linear;
 	box-sizing: border-box;
 	padding: .1rem 1rem;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	animation-name: modal-appear-animation;
+	animation-duration: .35s;
+	animation-timing-function: ease-in-out;
 }
 
 .modal-body > p {
@@ -57,4 +61,15 @@
 .modal-close-area > hr {
 	border-style: solid;
 	opacity: .35;
+}
+
+@keyframes modal-appear-animation {
+	from {
+		opacity: 0;
+		top: 60%;
+	}
+	to {
+		opacity: 1;
+		top: 50%;
+	}
 }
