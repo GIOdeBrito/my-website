@@ -7,11 +7,12 @@
 :root {
     --color-default-background: #e1dfd0;
     --color-ivory-background: #e1dfd0;
-    --color-gray-foreground: #24262b;
+    /*--color-gray-foreground: #24262b;*/
     --color-html-foreground: #f06529;
     --color-green-foreground: #659377;
     --color-dark-foreground: #2f2f2f;
     --color-dark-background: #1e1e1e;
+	--color-dark-background-transparent: #1e1e1ec7;
     --color-gray-foreground: #797979;
     --color-red-foreground: #ff4b4b;
     --color-bluegreen-foreground: #21b6a8;
@@ -20,7 +21,7 @@
 html, body {
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--color-dark-background);
+    background-color: var(--color-dark-background-transparent);
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--color-bluegreen-foreground) var(--color-dark-foreground);
@@ -192,9 +193,7 @@ footer > p {
 
 .base-section {
     display: flex;
-    background-color: #0000;
     padding: 4rem;
-    gap: 8rem;
 }
 
 .base-section h1 {
@@ -281,14 +280,12 @@ footer > p {
     align-items: end;
 }
 
-/* Projects icons */
+/* Project thumbnails */
 .projects-section > section > section {
     position: relative;
     width: 80vmin;
     overflow: hidden;
     cursor: pointer;
-    /*border-radius: 2rem;*/
-	border-radius: 1.2rem;
 	box-shadow: 0 0 1rem #00000063;
 }
 
@@ -296,6 +293,7 @@ footer > p {
     width: inherit;
     transition: filter .25s linear, transform .5s linear, opacity .3s linear;
 }
+
 .projects-section > section > section > :not(:first-child):not(span) {
     position: absolute;
 	top: 0;
@@ -361,5 +359,18 @@ footer > p {
 	100% {
 		transform: scale(1);
 	}
+}
+
+/* Website background */
+
+.website-background {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	background-image: url("../assets/outer-space-background.webp");
+	background-size: cover;
 }
 
