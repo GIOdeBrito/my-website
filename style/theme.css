@@ -194,6 +194,7 @@ footer > p {
 .base-section {
     display: flex;
     padding: 4rem;
+	gap: 1.5rem;
 }
 
 .base-section h1 {
