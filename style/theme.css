@@ -40,7 +40,9 @@ nav {
     top: 0;
     z-index: 6;
     padding: 1rem;
-    background-color: var(--color-dark-foreground);
+    /*background-color: var(--color-dark-foreground);*/
+	background-color: #2f2f2fbf;
+	backdrop-filter: blur(1rem);
     display: flex;
     gap: .3rem;
     border-style: solid;
@@ -204,7 +206,7 @@ footer > p {
     white-space: nowrap;
     border-style: solid;
     border-width: 0 0 3px 0;
-    border-color: #21b6a8;
+    border-color: #fff;
 }
 
 .base-section p {
@@ -213,22 +215,18 @@ footer > p {
 
 /* Bright technologies section */
 .bright-section-main {
-    background-color: #eee;
+    /*background-color: #00000082;*/
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
 
-.bright-section-main h1, .bright-section-main p {
-    color: #000;
-}
-
 .bright-section-main p {
+	color: #fff;
     text-align: end;
 }
 
 .bright-section {
-    background-color: #eee;
     display: block;
 }
 
@@ -251,7 +249,7 @@ footer > p {
 
 .bright-section h1 {
     text-align: center;
-    border-color: #000;
+    border-color: #fff;
     color: var(--color-gray-foreground);
 	font-weight: normal;
     border-style: none;
@@ -371,7 +369,25 @@ footer > p {
 	width: 100vw;
 	height: 100vh;
 	z-index: -1;
-	background-image: url("../assets/outer-space-background.webp");
+	background-image: url("https://image.lexica.art/full_webp/885ad418-93c6-4e1e-8dd5-4a52347137de");
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	filter: blur(20px);
+
+	animation-name: background-animation;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
 }
 
+@keyframes background-animation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.15);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
