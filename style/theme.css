@@ -369,25 +369,9 @@ footer > p {
 	width: 100vw;
 	height: 100vh;
 	z-index: -1;
-	background-image: url("https://image.lexica.art/full_webp/885ad418-93c6-4e1e-8dd5-4a52347137de");
+	background-image: url("../assets/image/background.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	filter: blur(20px);
-
-	animation-name: background-animation;
-	animation-duration: 50s;
-	animation-iteration-count: infinite;
-}
-
-@keyframes background-animation {
-	0% {
-		transform: scale(1);
-	}
-	50% {
-		transform: scale(1.15);
-	}
-	100% {
-		transform: scale(1);
-	}
 }
