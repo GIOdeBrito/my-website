@@ -1,183 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt" dir="ltr">
+<html lang="en" dir="ltr">
 	<head>
-		<title>Profile - Giordano de Brito</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="author" content="Giordano de Brito">
-		<meta name="description" content="My personal website and portfolio.">
-		<link rel="stylesheet" href="style/theme.css">
-		<script type="module" src="src/index.js"></script>
+		<meta name="description" content="My personal website and portfolio">
+		<link rel="stylesheet" href="./public/style/theme.css">
+		<script src="./public/src/strings.js"></script>
+		<title>Portfolio - Giordano de Brito</title>
 	</head>
 
 	<body>
 		<nav>
-			<article>
-				<p class="my-name-style">giordanodebrito</p>
-			</article>
+			<p>{giordanodebrito}</p>
+		</nav>
 
-			<article class="nav-options">
-				<section>
-					<a href="#about-section">About</a>
-				</section>
+		<article class="padding-2 color-white">
+			<h1>Giordano de Brito</h1>
+			<h4 data-lang-string="full-stack-title">Full Stack Developer</h4>
+			<p>
+				Full Stack C# / Node / PHP Developer
+				<br>
+				4+ years building websites, APIs, and maintaining Linux servers.
+				<br>
+				Focused on problem-solving.
+				<br>
+				Favorite tools: Pulsar & Nano.
+			</p>
+		</article>
 
-				<section>
-					<a href="#projects-section">Projects</a>
-				</section>
+		<article class="padding-2 color-white">
+			<h1>My Projects</h1>
 
-				<section>
-					<a href="#contact-section">Contact</a>
-				</section>
-			</article>
-        </nav>
+			<p>...</p>
+		</article>
 
-        <article class="base-profile">
-			<section>
-				<header>
-					<h1><mark name="upper-text">Meet me,</mark></h1>
-					<h1><mark name="name-text">Giordano Bruno Magnos de Brito</mark></h1>
-				</header>
+		<article class="padding-2 color-white">
+			<h1 data-lang-string="my-skills-header">My Skills</h1>
 
-				<section class="base-paragragh-area-1">
-					<p>An aspiring and self-learned fullstack web developer.</p>
-					<p>This is my portfolio, where I aim to present my profile as a person and developer.</p>
-				</section>
-			</section>
-
-			<section class="profile-picture">
-				<img src="assets/image/giordano.webp" alt="giordano">
+			<section class="skills-area">
+				<img src="https://cdn-icons-png.freepik.com/512/6132/6132221.png" alt="csharp">
+				<img src="https://cdn-icons-png.freepik.com/512/5968/5968332.png" alt="php">
+				<img src="https://cdn-icons-png.freepik.com/512/15484/15484303.png" alt="nodejs">
+				<img src="https://cdn-icons-png.freepik.com/512/919/919836.png" alt="mysql">
+				<img src="https://cdn-icons-png.freepik.com/512/5968/5968342.png" alt="postgres">
+				<img src="https://cdn-icons-png.freepik.com/512/919/919853.png" alt="docker">
+				<img src="https://cdn-icons-png.freepik.com/512/15466/15466163.png" alt="git">
 			</section>
 		</article>
 
-		<article id="about-section" class="base-section">
-			<section>
-				<header>
-					<h1>About me</h1>
-				</header>
-			</section>
+		<article class="padding-2 color-white">
+			<h1>Contact Me</h1>
 
 			<section>
-				<p>
-					I am a <mark id="mark-self-learned" name='outline'>self-learned web and desktop developer.</mark>
-					I began my journey in programming writing code in the Unity3D engine
-					with the now defunct UnityScript.
-				</p>
-
-				<p>
-					When I am not programming I enjoy <mark name='outline'>reading history and fantasy books</mark>, playing videogames and working on other side personal projects.
-				</p>
+				<p>Write an e-mail to: <a href="">giobrunob15@gmail.com</a></p>
 			</section>
 		</article>
-
-		<article id="skill-section" class="base-section bright-section-main">
-			<section>
-				<header>
-					<h1>Programming Languages & Technologies</h1>
-				</header>
-			</section>
-
-			<section>
-				<p></p>
-			</section>
-		</article>
-
-		<article class="base-section bright-section">
-			<section>
-				<header>
-					<h1>What I currently work with</h1>
-				</header>
-			</section>
-
-			<section id="programming-technology-icons">
-				<img src="assets/icons/csharp.webp" title="C-Sharp" alt="csharp">
-				<img src="assets/icons/javascript.webp" title="JavaScript" alt="js">
-				<img src="assets/icons/typescript.webp" title="TypeScript" alt="ts">
-				<img src="assets/icons/nodejs.webp" title="NodeJs" alt="nodejs">
-				<img src="assets/icons/php.webp" title="PHP" alt="php">
-				<img src="assets/icons/wordpress.webp" title="Wordpress" alt="wordpress">
-				<img src="assets/icons/mysql.webp" title="MySQL" alt="mysql">
-				<img src="assets/icons/godot.webp" title="Godot Engine" alt="godot">
-				<img src="assets/icons/tux.webp" title="Linux" alt="linux">
-				<img src="assets/icons/bash.webp" title="ShellScript" alt="bash">
-				<img src="assets/icons/git.webp" title="Git" alt="git">
-				<img src="assets/icons/docker.webp" title="Docker" alt="docker">
-			</section>
-		</article>
-
-		<article class="base-section bright-section">
-			<section>
-				<header>
-					<h1>What I have worked with</h1>
-				</header>
-			</section>
-
-			<section class="icons-grayscale">
-				<img src="assets/icons/c-language.webp" title="C" alt="c">
-				<img src="assets/icons/java.webp" title="Java" alt="coffee">
-				<img src="assets/icons/angular.webp" title="Angular" alt="angular">
-				<img src="assets/icons/unity.webp" title="Unity Engine" alt="unity">
-				<img src="assets/icons/sqlite.webp" title="SQLite" alt="sqlite">
-			</section>
-		</article>
-
-		<article id="projects-section" class="base-section">
-			<section>
-				<header>
-					<h1>Projects</h1>
-				</header>
-			</section>
-
-			<section>
-				<p></p>
-			</section>
-		</article>
-
-		<article class="projects-section">
-			<section>
-				<section>
-					<img src="assets/image/projects/agendamento.webp" loading="lazy" alt="agendamento">
-					<img src="assets/image/projects/agendamento_2.webp" loading="lazy" alt="agendamento">
-					<span>Scheduling System ✒️</span>
-				</section>
-
-				<section>
-					<img src="assets/image/projects/crypt3d.webp" loading="lazy" alt="crypt3d">
-					<img src="assets/image/projects/crypt3d_2.webp" loading="lazy" alt="crypt3d">
-					<img src="assets/image/projects/crypt3d_3.webp" loading="lazy" alt="crypt3d">
-					<span>Crypt3D 🪦</span>
-				</section>
-			</section>
-
-			<section class="projects-section-on-github">
-				<article>
-					<p>Many of my projects are stationed at:</p>
-
-					<a href="https://github.com/GIOdeBrito" target="_blank">
-						<img src="assets/icons/github.webp" alt="github">
-					</a>
-
-					<p>Visit my profile on <mark name='outline'>GitHub</mark> to gaze upon a variety of my work and recent activity.</p>
-				</article>
-			</section>
-		</article>
-
-		<article id="contact-section" class="base-section bright-section-main">
-			<section>
-				<header>
-					<h1>Contact</h1>
-				</header>
-			</section>
-
-			<section>
-				<p></p>
-			</section>
-		</article>
-
-		<!-- Background image -->
-		<div class="website-background" loading='eager'></div>
 
 		<footer>
-			<p>@Giordano de Brito, 2024</p>
+			<p>Giordano de Brito - 2026</p>
 		</footer>
 	</body>
 </html>

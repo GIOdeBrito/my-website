@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("rules.css");
+
+:root {
+	--color-background: #121212;
+	--color-white: #e0e0e0;
+}
+
+html, body {
+    margin: 0;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+	background-color: var(--color-background);
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+}

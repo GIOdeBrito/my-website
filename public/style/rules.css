@@ -1,0 +1,42 @@
+
+nav {
+	padding: 1rem 1rem 6rem 1rem;
+}
+
+nav > p {
+	font-weight: bold;
+	color: var(--color-white);
+}
+
+footer {
+	color: var(--color-white);
+	text-align: center;
+}
+
+.padding-2 {
+	padding: 2rem 6rem;
+}
+
+.padding-6 {
+	padding: 6rem;
+}
+
+.color-white {
+	color: var(--color-white);
+}
+
+.markdown {
+	color: var(--color-background);
+	background-color: var(--color-white);
+	padding: 0 .1rem;
+}
+
+.skills-area > img {
+	max-height: 50px;
+	transition: transform 200ms ease;
+}
+
+.skills-area > img:hover {
+	transform: scale(1.11);
+}
+
